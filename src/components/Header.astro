@@ -1,0 +1,23 @@
+---
+import logo from "../assets/headerleft-logo.png";
+import laf from "../assets/button-laf.png";
+---
+
+<header class="py-8 flex flex-row bg-rose-wood justify-between items-center">
+  <div class="w-2/12">
+    <img class="w-6/12" src={logo} alt="" />
+  </div>
+
+  <nav
+    class="text-sm space-x-3 flex text-white mr-2 font-thin md:justify-between"
+  >
+    <a href="">About</a>
+    <a href="">Menu</a>
+    <a href="">Venue</a>
+    <a href="">Events</a>
+  </nav>
+  <div class="flex">
+    <button class="border-0 bg-sheen-gold text-xs p-1">BOOK NOW</button>
+    <img class="h-[47px]" src={laf} alt="" />
+  </div>
+</header>

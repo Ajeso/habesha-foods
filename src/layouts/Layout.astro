@@ -1,4 +1,6 @@
 ---
+import Footer from "@components/Footer.astro";
+import Header from "@components/Header.astro";
 import "../global.css";
 
 export interface Props {
@@ -6,8 +8,6 @@ export interface Props {
 }
 
 const { title } = Astro.props;
-
-import footer from "../components/footer.astro";
 ---
 
 <!DOCTYPE html>
@@ -19,9 +19,10 @@ import footer from "../components/footer.astro";
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-rose-wood">
+  <body class="bg-banana-mania">
+    <Header/>
     <h1>hello babe</h1>
     <slot />
-    
+    <Footer />
   </body>
 </html>
