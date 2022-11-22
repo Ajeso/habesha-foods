@@ -1,7 +1,112 @@
 ---
 import Layout from "@layouts/Layout.astro";
+import image8 from "../assets/image8.png";
+import image9 from "../assets/image9.png";
+import map from "../assets/map.png";
 ---
 
 <Layout title="Habesha.">
-  <main class="bg-sheen-gold"></main>
+  <main class="bg-sheen-gold">
+    <article
+      class="flex md:flex-row flex-col justify-around items-center md:p-32"
+    >
+      <div class="md:basis-1/2 text-rose-wood space-y-8">
+        <h1 class="text-7xl font-thin">Our Story</h1>
+        <p class="text-lg">
+          We're an absolute leader in the Saudi cuisine-themed restuarants.
+        </p>
+        <div class="md:flex space-x-12 pt-14">
+          <img class="w-56 h-[467px] mt-14" src={image8} alt="" />
+          <img class="w-56 h-[467px]" src={image9} alt="" />
+        </div>
+      </div>
+
+      <div class="basis-1/2 space-y-8">
+        <h3 class="text-white text-xl font-thin">
+          One of the best restuarants in SaudiArabia
+        </h3>
+        <p class="text-rose-wood text-xl md:w-[450px]">
+          Your one direction to high-quality Saudi feasts, since 1998 we served
+          in Saudi Arabia.
+        </p>
+        <p class="text-rose-wood text-xl md:w-[450px]">
+          Locals who are proud of the country and want to introduce it to
+          visitors from around the world.
+        </p>
+        <p class="text-rose-wood text-xl md:w-[450px]">
+          We are perfectly positioned to provide our guests with an
+          extraordinary health experience unlike any they’ve ever tasted. We can
+          confidently claim that our menu is unlike anything else offered in the
+          industry.
+        </p>
+        <p class="text-rose-wood text-xl md:w-[450px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+          finibus mauris nec tincidunt varius. Ut sagittis, lorem at bibendum
+          ornare, mauris neque venenatis justo, ut gravida mi neque eu lorem.
+          Vestibulum auctor leo sit amet vulputate mollis. Curabitur ac lorem
+          felis. Morbi ullamcorper maximus lorem.
+        </p>
+      </div>
+    </article>
+    <section class="bg-rose-wood md:p-32 md:m-32">
+      <hr class="border-dotted border-white opacity-50" />
+      <div class="flex flex-col md:flex-row space-x-4">
+        <div class="history-1 space-y-6">
+          <hr class="w-10 border-sheen-gold border-2 -m-0.5" />
+          <h1 class="text-white text-2xl">1998</h1>
+          <h6 class="text-white text-lg">Milestone One</h6>
+          <p class="text-sheen-gold text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="history-2 space-y-6">
+          <hr class="w-10 border-sheen-gold border-2 -m-0.5" />
+          <h1 class="text-white text-2xl">2005</h1>
+          <h6 class="text-white text-lg">Milestone Two</h6>
+          <p class="text-sheen-gold text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="history-3 space-y-6">
+          <hr class="w-10 border-sheen-gold border-2 -m-0.5" />
+          <h1 class="text-white text-2xl">2012</h1>
+          <h6 class="text-white text-lg">Milestone Three</h6>
+          <p class="text-sheen-gold text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="history-4 space-y-6">
+          <hr class="w-10 border-sheen-gold border-2 -m-0.5" />
+          <h1 class="text-white text-2xl">2021</h1>
+          <h6 class="text-white text-lg">Milestone Four</h6>
+          <p class="text-sheen-gold text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="md:p-28 bg-space-cadet md:my-8 flex">
+      <div class="md:bg-rose-wood p-12 w-[412px] text-white space-y-2">
+        <h3 class="text-lg text-sheen-gold pt-4">Working Hours</h3>
+        <p>
+          Sunday to Saturday<br /><time>9:00AM</time> to <time>11:00PM</time>
+        </p>
+        <p>Friday<br /><time>2:00PM</time> to <time>1:00AM</time></p>
+
+        <h3 class="text-lg text-sheen-gold pt-4">Location</h3>
+        <p>Street - 127,<br /> Jeddah,Saudi Arabia <br />546544</p>
+
+        <h3 class="text-lg text-sheen-gold pt-4">Contact Us</h3>
+        <address>
+          <a href="tel:+123456789">+123456789</a><br />
+          <a href="service@maizresturant.com">service@maizresturant.com</a><br
+          />
+        </address>
+      </div>
+
+      <div class="hidden md:block">
+        <img class="w-[781px] h-[497px]" src={map} alt="" />
+      </div>
+    </section>
+  </main>
 </Layout>
