@@ -14,13 +14,13 @@ import cube from "../assets/cube-vector.png";
 ---
 
 <Layout title="Habesha.">
-  <main class="bg-rose-wood font-seriif">
-    <section class="container-1 flex py-6 px-2 md:px-12 h-full">
+  <main class="bg-rose-wood font-seriif overflow-auto">
+    <section class="container-1 flex py-6 px-2 md:p-20 h-full">
       <div
-        class="sm:basis-6/12 text-white pt-9 pr-2 md:flex flex-col justify-between md:space-y-8"
+        class="lg:bg-[url('../src/assets/image10.png')] bg-no-repeat lg:bg-[length:710px_883px] bg-top md:basis-6/12 text-white pt-9 pr-2 md:flex flex-col justify-between md:space-y-8 space-y-7"
       >
         <h1
-          class="bg-rose-wood md:bg-blend-luminosity text-3xl md:text-[88px] font-thin leading-none md:mt-80 md:w-[130%] md:tracking-wide md:z-40"
+          class="lg:bg-rose-wood lg:bg-opacity-50 text-3xl md:text-7xl lg:text-[88px] font-thin leading-none md:mt-10 lg:w-[130%] md:tracking-wide md:z-40"
         >
           Taste the authenctic saudi Cuisine
         </h1>
@@ -28,34 +28,40 @@ import cube from "../assets/cube-vector.png";
           Among the best Saudi chef's in the world, <br /> serving you something
           beyond flavor
         </p>
-        <div class="">
+        <div class="text-center">
           <button
-            class="border-sheen-gold border-2 md:w-32 cursor-pointer items-center p-3 text-sheen-gold"
+            class="border-sheen-gold border-2 md:w-32 cursor-pointer p-3 font-thin text-sheen-gold"
           >
             Our Menu</button
           >
         </div>
 
-        <img class="w-20" src={vector2} alt="" />
+        <div class="pt-7 invisible lg:visible">
+          <img class="w-16" src={vector2} alt="" />
+        </div>
       </div>
-      <div class="basis-6/12 hidden sm:block md:-ml-20">
+      <div class="basis-6/12 invisible md:visible md:-ml-20">
         <img class="w-6 h-6 float-right" src={vector1} alt="" />
         <img class="" src={image1} alt="" />
       </div>
     </section>
 
     <!-- beginning of the second section -->
-    <section class="container-2 md:p-14 flex justify-between">
-      <div class="image w-1/3">
+    <section class="container-2 flex justify-between p-4">
+      <div class="image w-1/3 md:py-20 md:pl-20">
         <img class="" src={image2} alt="" />
       </div>
       <div
-        class="content bg-[url('../src/assets/image10.png')] bg-center bg-no-repeat bg-cover text-white flex flex-col w-2/3 md:space-y-8 pl-8 justify-between"
+        class="content lg:bg-[url('../src/assets/image10.png')] bg-no-repeat md:bg-[length:550px_800px] bg-right text-white flex flex-col w-2/3 md:space-y-8 justify-between md:py-20 md:pr-20 pl-8"
       >
-        <h1 class="md:text-4xl">
+        <h1
+          class="text-2xl md:text-[30px] lg:text-[60px] font-thin md:leading-loose"
+        >
           A distinctive dining destination inspired by the culture.
         </h1>
-        <p class="text-xl">Experience a Ballad old town of Jeddah vibes</p>
+        <p class="text-xl invisible md:visible">
+          Experience a Ballad old town of Jeddah vibes
+        </p>
 
         <button class="bg-sheen-gold p-3 w-36 text-rose-wood">
           Our Venue</button
@@ -66,17 +72,15 @@ import cube from "../assets/cube-vector.png";
           <img class="w-36 h-40" src={image4} alt="" />
           <img class="w-36 h-40" src={image5} alt="" />
         </div>
-        <div class="flex flex-row justify-around">
+        <div class="flex flex-row justify-between invisible md:visible">
           <img class="w-[400px] h-0.5" src={line} alt="" />
-          <img class="w-16 h-16" src={cube} alt="" />
+          <img class="w-16 h-16 -mt-20 hidden lg:visible" src={cube} alt="" />
         </div>
       </div>
     </section>
 
-    <sction
-      class="container-3 md:p-14 flex md:flex-row flex-col justify-between"
-    >
-      <div class="bg-sheen-gold p-11 md:w-[561px] md:h-[400px]">
+    <section class="container-3 md:p-14 flex flex-row justify-between">
+      <div class="bg-sheen-gold p-11 lg:p-28 md:w-[561px] md:h-[555px]">
         <svg
           aria-hidden="true"
           class="w-3 h-3"
@@ -94,23 +98,24 @@ import cube from "../assets/cube-vector.png";
             dry). I would defiantly recommend it."
           </p>
         </blockquote>
-        <div class="flex justify-between pt-20 items-end">
+        <div class="flex justify-between pt-20 items-end lg:pb-6">
           <p class="text-space-cadet">Khalid Al Dawsry <br />Jedah, Saudi</p>
           <img class="" src={profile} alt="" />
         </div>
+        <hr class="dark-cyan invisible lg:visible" />
       </div>
-      <div class="md:h-[400px] md:w-[769px]">
+      <div class="md:h-[555px] md:w-[769px] hidden lg:visible">
         <img class="w-full h-full" src={image6} alt="" />
       </div>
-    </sction>
+    </section>
 
     <!-- before footer container -->
     <section
-      class="container-4 p-11 bg-[url('../src/assets/image7.png')] bg-center bg-no-repeat bg-cover md:h-[500px] flex flex-col items-center"
+      class="container-4 p-11 lg:bg-[url('../src/assets/image7.png')] bg-center bg-no-repeat bg-cover md:h-[500px] flex flex-col items-center"
     >
       <img class="w-24 h-28" src={vector1} alt="" />
 
-      <h1 class="text-white text-6xl p-11">
+      <h1 class="text-white lg:text-6xl md:p-11">
         A Unique menu that reflects the true essence of the Saudi cuisine
       </h1>
 

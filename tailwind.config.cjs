@@ -10,6 +10,7 @@ module.exports = {
       "space-cadet": "#243054",
       "banana-mania": "#FFE9B6",
       "gray-light": "#d3dce6",
+      "dark-cyan": "#00646D",
     },
     extend: {
       //   fontFamily: {

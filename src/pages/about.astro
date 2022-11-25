@@ -8,7 +8,7 @@ import map from "../assets/map.png";
 <Layout title="Habesha.">
   <main class="bg-sheen-gold">
     <article
-      class="flex md:flex-row flex-col justify-around items-center md:p-32"
+      class="flex lg:flex-row p-4 flex-col justify-around items-center md:p-32"
     >
       <div class="md:basis-1/2 text-rose-wood space-y-8">
         <h1 class="text-7xl font-thin">Our Story</h1>
@@ -25,21 +25,21 @@ import map from "../assets/map.png";
         <h3 class="text-white text-xl font-thin">
           One of the best restuarants in SaudiArabia
         </h3>
-        <p class="text-rose-wood text-xl md:w-[450px]">
+        <p class="text-rose-wood text-xl lg:w-[450px]">
           Your one direction to high-quality Saudi feasts, since 1998 we served
           in Saudi Arabia.
         </p>
-        <p class="text-rose-wood text-xl md:w-[450px]">
+        <p class="text-rose-wood text-xl lg:w-[450px]">
           Locals who are proud of the country and want to introduce it to
           visitors from around the world.
         </p>
-        <p class="text-rose-wood text-xl md:w-[450px]">
+        <p class="text-rose-wood text-xl lg:w-[450px]">
           We are perfectly positioned to provide our guests with an
           extraordinary health experience unlike any they’ve ever tasted. We can
           confidently claim that our menu is unlike anything else offered in the
           industry.
         </p>
-        <p class="text-rose-wood text-xl md:w-[450px]">
+        <p class="text-rose-wood text-xl lg:w-[450px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
           finibus mauris nec tincidunt varius. Ut sagittis, lorem at bibendum
           ornare, mauris neque venenatis justo, ut gravida mi neque eu lorem.
@@ -48,35 +48,45 @@ import map from "../assets/map.png";
         </p>
       </div>
     </article>
-    <section class="bg-rose-wood md:p-32 md:m-32">
-      <hr class="border-dotted border-white opacity-50" />
-      <div class="flex flex-col md:flex-row space-x-4">
-        <div class="history-1 space-y-6">
-          <hr class="w-10 border-sheen-gold border-2 -m-0.5" />
+    <section class="bg-rose-wood lg:p-32 md:m-32 p-4">
+      <hr class="border-dotted invisible md:visible border-white opacity-50" />
+      <div
+        class="flex flex-col md:flex-row md:space-x-4 space-y-6 md:space-y-0"
+      >
+        <div class="history-1 lg:space-y-6 md:space-y-3">
+          <hr
+            class="w-10 border-sheen-gold border-2 -m-0.5 invisible md:visible"
+          />
           <h1 class="text-white text-2xl">1998</h1>
           <h6 class="text-white text-lg">Milestone One</h6>
           <p class="text-sheen-gold text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
-        <div class="history-2 space-y-6">
-          <hr class="w-10 border-sheen-gold border-2 -m-0.5" />
+        <div class="history-2 lg:space-y-6 md:space-y-3">
+          <hr
+            class="w-10 border-sheen-gold border-2 -m-0.5 invisible md:visible"
+          />
           <h1 class="text-white text-2xl">2005</h1>
           <h6 class="text-white text-lg">Milestone Two</h6>
           <p class="text-sheen-gold text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
-        <div class="history-3 space-y-6">
-          <hr class="w-10 border-sheen-gold border-2 -m-0.5" />
+        <div class="history-3 lg:space-y-6 md:space-y-3">
+          <hr
+            class="w-10 border-sheen-gold border-2 -m-0.5 invisible md:visible"
+          />
           <h1 class="text-white text-2xl">2012</h1>
           <h6 class="text-white text-lg">Milestone Three</h6>
           <p class="text-sheen-gold text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
-        <div class="history-4 space-y-6">
-          <hr class="w-10 border-sheen-gold border-2 -m-0.5" />
+        <div class="history-4 lg:space-y-6 md:space-y-3">
+          <hr
+            class="w-10 border-sheen-gold border-2 -m-0.5 invisible md:visible"
+          />
           <h1 class="text-white text-2xl">2021</h1>
           <h6 class="text-white text-lg">Milestone Four</h6>
           <p class="text-sheen-gold text-sm">
@@ -85,7 +95,9 @@ import map from "../assets/map.png";
         </div>
       </div>
     </section>
-    <section class="md:p-28 bg-space-cadet md:my-8 flex">
+    <section
+      class="md:p-28 bg-space-cadet lg:bg-[url('../src/assets/image10.png')] bg-no-repeat md:bg-[length:550px_800px] bg-right flex"
+    >
       <div class="md:bg-rose-wood p-12 w-[412px] text-white space-y-2">
         <h3 class="text-lg text-sheen-gold pt-4">Working Hours</h3>
         <p>

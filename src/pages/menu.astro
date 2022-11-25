@@ -31,7 +31,7 @@ import map from "../assets/map.png";
           </nav>
         </div>
 
-        <p class="text-white font-thin float-right hidden">
+        <p class="text-white font-thin float-right invisible md:visible">
           There is a wide selection of choices served by top <br /> Saudi chefs,
           prepared using best quality local<br /> ingredients.
         </p>
@@ -105,12 +105,14 @@ import map from "../assets/map.png";
     </section>
 
     <div class="text-center py-12">
-      <button class="border-2 border-white text-white p-4 text-center text-2xl"
+      <button class="border-2 border-white text-white p-3 text-center text-2xl"
         >Show More</button
       >
     </div>
 
-    <section class="md:p-28 flex">
+    <section
+      class="md:p-28 flex lg:bg-[url('../src/assets/image10.png')] bg-no-repeat md:bg-[length:550px_650px] bg-right"
+    >
       <div class="bg-space-cadet p-12 w-[412px] text-white space-y-2">
         <h3 class="text-lg text-sheen-gold pt-4">Working Hours</h3>
         <p>
@@ -129,7 +131,7 @@ import map from "../assets/map.png";
         </address>
       </div>
 
-      <div class="hidden md:block">
+      <div class="invinsible md:visible">
         <img class="w-[781px] h-[497px]" src={map} alt="" />
       </div>
     </section>
